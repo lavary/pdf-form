@@ -1,4 +1,4 @@
-# php-pdftk
+# pdf-form
 
 A very basic class for filling out PDF forms using PHP and PDFtk Server.
 
@@ -10,7 +10,7 @@ To use the class, first we need to make sure it is loaded before using it either
 
 Suppose we have the following PDF form:
 
-![raw-form](raw-form.jpg)
+![raw-form](raw_form.jpg)
 
 ###Filling Out the Form
 
@@ -34,6 +34,9 @@ $pdf->flatten()
 ```
 
 Data can be fetched from different sources like a database table, a JSON object or just an array as we did in above snippet.
+
+![raw-form](filled_form.jpg)
+
 
 ###Creating a FDF File
 
