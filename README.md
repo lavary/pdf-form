@@ -10,7 +10,7 @@ To use the class, first we need to make sure it is loaded before using it either
 
 Suppose we have the following PDF form:
 
-![raw-form](raw_form.jpg)
+![raw-form](screenshots/raw_form.jpg)
 
 ###Filling Out the Form
 
@@ -35,7 +35,7 @@ $pdf->flatten()
 
 Data can be fetched from different sources like a database table, a JSON object or just an array as we did in above snippet.
 
-![raw-form](filled_form.jpg)
+![raw-form](screenshots/filled_form.jpg)
 
 
 ###Creating a FDF File
