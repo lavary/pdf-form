@@ -16,7 +16,7 @@ Suppose we have the following PDF form:
 
 ```php
 <?php
-require 'pdfForm.php';
+require 'PdfForm.php';
 
 $data = [
     'first_name' => 'John',
@@ -26,7 +26,7 @@ $data = [
     'gender'     => 'male'
 ];
 
-$pdf = new pdfForm('form.pdf', $data);
+$pdf = new PdfForm('form.pdf', $data);
 
 $pdf->flatten()
     ->save('output.pdf')
@@ -40,11 +40,11 @@ Data can be fetched from different sources like a database table, a JSON object 
 
 ###Creating a FDF File
 
-If we just need to create a FDF file without filling out a form, we can only use `make_fdf()` method.
+If we just need to create a FDF file without filling out a form, we can only use `makeFdf()` method.
 
 ```php
 <?php
-require 'pdfForm.php';
+require 'PdfForm.php';
 
 $data = [
     'first_name' => 'John',
@@ -54,11 +54,11 @@ $data = [
     'gender'     => 'male'
 ];
 
-$pdf = new pdfForm('form.pdf', $data);
+$pdf = new PdfForm('form.pdf', $data);
 
-$fdf = $pdf->make_fdf();
+$fdf = $pdf->makeFdf();
 ```
-The return value of `make_fdf()` is the path to the generated FDF file in the `tmp` directory. You can either get the content of the file or save it to a permanent location.
+The return value of `makeFdf()` is the path to the generated FDF file in the `tmp` directory. You can either get the content of the file or save it to a permanent location.
 
 ###Extracting PDF Field Information
 
@@ -67,9 +67,9 @@ If we just need to see what fields and field types exist in the form,  we can ca
 ```php
 <?php
 
-require 'pdfForm.php';
+require 'PdfForm.php';
 
-$fields = new pdfForm('form.pdf')->fields();
+$fields = new PdfForm('form.pdf')->fields();
 
 echo $fields;
 
@@ -80,9 +80,9 @@ If there's no need to parse the output, we can pass `true` to the `fields()` met
 ```php
 <?php
 
-require 'pdfForm.php';
+require 'PdfForm.php';
 
-$pdf = new pdfForm('pdf-test.pdf')->fields(true);
+$pdf = new PdfForm('pdf-test.pdf')->fields(true);
 
 echo $pdf;
 
