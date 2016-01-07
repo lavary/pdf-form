@@ -1,6 +1,6 @@
 # pdf-form
 
-A very basic class for filling out PDF forms using PHP and PDFtk Server.
+A basic class for filling out PDF forms using PHP and PDFtk Server.
 
 
 ## Usage
