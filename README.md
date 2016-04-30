@@ -3,6 +3,8 @@
 A basic class for filling out PDF forms using PHP and PDFtk Server.
 
 
+**Notice:** This class has been created for an educational purpose.
+
 ## Usage
 
 
